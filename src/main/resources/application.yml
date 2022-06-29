@@ -1,0 +1,20 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://vikthor:JMvvQquiFTgO2rTv@defaultcluster.rl0q8pd.mongodb.net/?retryWrites=true&w=majority
+      database: votacao
+springfox:
+  documentation:
+    info:
+      title: Teste Técnico de Votação
+      description: Documentação Swagger do Teste
+      version: v1
+server:
+  error:
+    include-message: always
+kafka:
+  bootstrap-servers: sacred-iguana-10863-us1-kafka.upstash.io:9092
+  sasl-jaas-config: org.apache.kafka.common.security.scram.ScramLoginModule required username="c2FjcmVkLWlndWFuYS0xMDg2MyQk8ayldfYQj8gin87coHjYBqMC2XuxLEiMCF4" password="bJ_RIvaiydJEp1ELvvRkdq7zPEi_yJ6F9ATjxkWndk11ZO1OeLn7-bkr7UznTnOQbK7vHA==";
+env:
+  cpf-validator: https://user-info.herokuapp.com/users/
+  dispatcher-servlet.log: full
